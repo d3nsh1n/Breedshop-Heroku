@@ -5,7 +5,7 @@
     "main": "dist/main.js",
     "scripts": {
         ".": "node .",
-        "dev": "npx nodemon .",
+        "start": "npx nodemon .",
         "trace": "npx nodemon --trace-warnings .",
         "inspect": "npx nodemon --inspect .",
         "tw": "npx tsc -w",
