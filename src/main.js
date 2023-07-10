@@ -2,6 +2,8 @@ import chalk from "chalk";
 import dayjs from "dayjs";
 import express from "express";
 import cors from "cors";
+import path from "path";
+// import "./test";
 import { POKEBALLS, POKEMON, init } from "./load.js";
 console.log(chalk.magenta(`===== ${dayjs().format("HH:mm:ss")} =====`));
 const app = express(); //
@@ -9,8 +11,8 @@ app.use(cors());
 const port = process.env.PORT || 3000; //
 
 // Serve static assets
-app.use(express.static("front_dist"));
-app.use(express.static("assets"));
+app.use(express.static(path.join(__dirname, "front_dist")));
+app.use(express.static(path.join(__dirname, "assets")));
 
 // Load files
 init();
