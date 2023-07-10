@@ -2,7 +2,7 @@
     "type": "module",
     "name": "ts-tests",
     "private": true,
-    "main": "dist/main.js",
+    "main": "src/main.js",
     "scripts": {
         ".": "node .",
         "start": "npx nodemon .",
