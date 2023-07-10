@@ -2,7 +2,6 @@ import chalk from "chalk";
 import dayjs from "dayjs";
 import express from "express";
 import cors from "cors";
-import "./test.js";
 import { POKEBALLS, POKEMON, init } from "./load.js";
 console.log(chalk.magenta(`===== ${dayjs().format("HH:mm:ss")} =====`));
 const app = express(); //
