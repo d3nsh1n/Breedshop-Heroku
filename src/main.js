@@ -14,8 +14,8 @@ app.use(cors());
 const port = process.env.PORT || 3000; //
 
 // Serve static assets
-app.use(express.static(path.join(__dirname, "front_dist")));
-app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.static(path.join(__dirname, "../front_dist")));
+app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
 // Load files
 init();
