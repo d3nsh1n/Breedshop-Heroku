@@ -6,7 +6,7 @@ import { POKEBALLS, POKEMON, init } from "./load.js";
 console.log(chalk.magenta(`===== ${dayjs().format("HH:mm:ss")} =====`));
 const app = express(); //
 app.use(cors());
-const port = 3000; //
+const port = process.env.PORT || 3000; //
 
 // Serve static assets
 app.use(express.static("front_dist"));
