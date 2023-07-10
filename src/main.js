@@ -5,6 +5,9 @@ import cors from "cors";
 import path from "path";
 // import "./test";
 import { POKEBALLS, POKEMON, init } from "./load.js";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 console.log(chalk.magenta(`===== ${dayjs().format("HH:mm:ss")} =====`));
 const app = express(); //
 app.use(cors());
